@@ -5,7 +5,7 @@ using System.Text;
 namespace StackExample
 {
     /// <summary>
-    /// 顺序栈(第一次的做法)
+    /// 顺序栈
     /// </summary>
     public class ArrayStack<T>
     {
@@ -13,10 +13,10 @@ namespace StackExample
         private T[] _item;
         public int Count { get; set; }
 
-        public ArrayStack()
+        public ArrayStack(int n)
         {
-            _item = new T[10];
-            this.Count = 0;
+            _item = new T[n];
+            this.Count = n;
             _currentIndex = 0;
         }
 
